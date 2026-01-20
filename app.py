@@ -18,9 +18,9 @@ st.title("📊 UIDAI Aadhaar Enrollment & Update Analytics")
 # -------------------------
 @st.cache_data
 def load_data():
-    enrol = pd.read_csv(r"C:\Users\mdeep\Downloads\api_data_aadhar_enrolment.csv")
-    demo = pd.read_csv(r"C:\Users\mdeep\Downloads\api_data_aadhar_demograp.csv")
-    bio = pd.read_csv(r"C:\Users\mdeep\Downloads\api_data_aadhar_biometric.csv")
+    enrol = pd.read_csv(r"api_data_aadhar_enrolment.csv")
+    demo = pd.read_csv(r"api_data_aadhar_demograp.csv")
+    bio = pd.read_csv(r"api_data_aadhar_biometric.csv")
     return enrol, demo, bio
 
 enrol, demo, bio = load_data()
@@ -203,3 +203,4 @@ st.dataframe(solution_df)
 # -------------------------
 st.markdown("---")
 st.markdown("**UIDAI Data Hackathon Dashboard** | Built with Streamlit & Plotly")
+st.markdown("**PRANGYA SREE PATTANAYAK** |**DEEPAK KUMAR MAJHI** | **ISHU ANAND** | **MIHIR KUMAR PANIGRAHI** |")
